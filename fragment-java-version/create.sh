@@ -3,12 +3,11 @@ tanzu accelerator fragment create tap-my-acc-fragment-java-version \
   --git-branch main \
   --git-sub-path fragment-java-version
   
-  tanzu accelerator fragment get tap-my-acc-fragment-java-version
-
-  ###
-  ## artifact:
-  ## message: stored artifact for revision 'main/26e9566617f16a0699f7da10181bbae1a1d3fab1'
-  ## ready: true
+## check following output to check readiness.
+## artifact:
+## message: stored artifact for revision 'main/26e9566617f16a0699f7da10181bbae1a1d3fab1'
+## ready: true
+tanzu accelerator fragment get tap-my-acc-fragment-java-version
 
 
   

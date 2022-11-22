@@ -1,2 +1,5 @@
-tanzu accelerator create tap-my-acc-import --local-path .  --source-image harbor.h2o-2-2257.h2o.vmware.com/tap-source/tap-my-acc-import --interval 10s
-tanzu accelerator get tap-my-acc-import
+#!/bin/bash
+
+source ../env.yml
+tanzu accelerator create tap-my-cc-import --local-path .  --source-image $IMAGE_REGISTRY/tap-source/tap-my-cc-import --interval 10s
+tanzu accelerator get tap-my-cc-import
