@@ -1,2 +1,0 @@
-tanzu accelerator fragment push tap-my-fragment-java-version --local-path .  --source-image harbor.h2o-2-2257.h2o.vmware.com/tap-source/tap-my-fragment-java-version--interval
-tanzu accelerator fragment get tap-my-fragment-java-version

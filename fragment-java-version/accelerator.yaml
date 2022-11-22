@@ -52,6 +52,12 @@ engine:
         options:
           oldKeyPath: '"$.spec.build.env[?(@.name == ''BP_JVM_VERSION'')].value"'
           value: "#workloadJavaVersion"
+      ## ADDED!
+      - type: ReplaceText
+        condition: "#javaVersion == '17'"
+        substitutions:
+          - text: "spec:"
+            with: "'spec:\n  build:\n    env:\n    - name: BP_JVM_VERSION\n      value: \"17\"'"
 
     # *.yaml
     # Targeting Pipeline definitions. Update versions of OpenJdk image.
