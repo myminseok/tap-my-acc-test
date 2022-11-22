@@ -1,0 +1,1 @@
+tanzu accelerator delete tap-my-cc-first

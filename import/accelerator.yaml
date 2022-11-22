@@ -1,0 +1,18 @@
+# https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.3/tap/GUID-application-accelerator-creating-accelerators-creating-accelerators.html#using-accelerator-fragments-4
+accelerator:
+  displayName: my import acc
+  description: my import acc
+  tags:
+  - java
+  - spring
+  - cloud
+  - tanzu
+
+  imports:
+  - name: tap-my-acc-fragment-java-version
+
+engine:
+  merge:
+    - include: ["**/*"]
+    - type: InvokeFragment
+      reference: tap-my-acc-fragment-java-version

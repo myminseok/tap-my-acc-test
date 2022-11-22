@@ -1,0 +1,17 @@
+accelerator:
+  displayName: my first acc
+  description: my first acc
+  tags:
+  - java
+  - spring
+  - cloud
+  - tanzu
+
+  imports:
+  - name: java-version
+
+engine:
+  merge:
+    - include: ["**/*"]
+    - type: InvokeFragment
+      reference: java-version
